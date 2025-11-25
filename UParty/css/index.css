@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("../assets/fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../assets/fonts/Montserrat-Bold.eot");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("../assets/fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../assets/fonts/Montserrat-Medium.eot");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Medium.woff2") format("woff2"), url("../assets/fonts/Lato-Medium.woff") format("woff");
+  src: url("../assets/fonts/Lato-Medium.eot");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  --text-color: #1E1E1E;
+  --text-tag-color: #787878;
+  --yellow-defolt-color: #F7D454;
+  --yellow-hover-color: #E7C547;
+  --yellow-active-color: #DEBB38;
+  --pink-defolt-color: #FC2A75;
+  --pink-hover-color: #EC296F;
+  --pink-active-color: #D92163;
+  --purle-defolt-color: #9347E3;
+}
+:root {
+  --prymary: "Montserrat", sans-serif;
+  --secondary: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Lato';
+    font-size: 26px;
+}
+
+p {
+    font-family: 'Lato';
+    font-size: 22px;
+}
+
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 1230px;
+}
+
+.header_logo {
+    display: flex;
+    gap: 8px;
+}
+
+.header_search {
+
+}
+
+.search-button {
+border: none;
+background-color:rgb(255, 0, 0,0);
+position: absolute;
+
+}
+.header_search {
+    display: flex;
+    /* position: fixed; */
+    justify-content: end;
+}
+.header_search .search-button {
+    width: 25px;
+    /* height: 25px;
+    margin-left: 5px;
+    margin-bottom: 5px; */
+    padding: 0;
+    display: flex;
+    margin-top: -3px;
+    margin-right: 15px;
+    z-index: 1;
+
+}
+
+.header_search input{
+    display: flex;
+    outline: none;
+    border: 2px solid #1e1e1e; 
+    width: 350px;
+    height: 36px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 0px rgba(30, 30, 30, 1);
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 40px;
+
+}
+
+
+
+
+.header_user-menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+.header_user-notify {
+
+}
+
+.header_user-notify img {
+    width: 20px;
+    height: 30px;
+    
+}
+
+.header_user-account {
+
+}
+
+.header_user-account img {
+    width: 30px;
+    height: 30px;
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+}
+
+.container_event {
+    width: 1230px;
+}
+
+.card_title-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card_title-btn  button{
+    min-width: 160px;
+    min-height: 45px;
+    border-radius: 10px;
+    border: 2px solid #1E1E1E;
+    background-color: var(--yellow-defolt-color);
+    box-shadow: 3px 3px 0px rgba(30, 30, 30, 1);
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.card_title-btn button:hover{
+    
+    background-color: var(--yellow-hover-color);
+}
+.card_title-btn button:active{
+    box-shadow: none;
+    background-color: var(--yellow-active-color);
+}
+
+.card_slider-timetable {
+    display: flex;
+    
+    margin-top: 20px;
+}
+
+.card_timetable a, p {
+    font-family: 'Lato';
+    font-size: 24px;
+}
+
+.card_timetable-date {
+
+}
+
+.card_timetable-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.event_description  {
+    margin-top: 30px;
+}
+
+.event_description p {
+    margin-top: 20px;
+}
+
+.event_map {
+    margin-top: 30px;
+}
+
+.event_map-constructor {
+    margin-top: 20px;
+}
